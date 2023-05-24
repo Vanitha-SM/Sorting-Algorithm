@@ -80,10 +80,12 @@ else:
 ```
 
 ## Output:
-![output](/Sorting-Algorithm/img/3b1.png)
+
+![3b1](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/21852600-9c5a-4c71-a2ea-8c778993ca23)
 
 
-![output](/Sorting-Algorithm/img/3b2.png)
+
+![3b2](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/6bac1295-e29e-42e8-8f01-054d0e764544)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
