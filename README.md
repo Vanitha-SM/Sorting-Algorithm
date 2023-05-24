@@ -21,71 +21,55 @@ To write a program to perform selection sort and insertion sort using python pro
 i)	#Selection Sort
 ```
 ''' 
-Program for linear search method to match the item in a list
+Program to sort the elements in the list using the Selection Sort algorithm.
 Developed by: Vanitha S
 RegisterNumber: 212222100057
 '''
-def linearSearch(array,n,k):
-    for i in range(0,n):
-        if(array[i]==k):
-            return i
-    return -1
-    
-array = eval(input())
-# sort the array
-k = eval(input()) # k-item to be seared for
-n=len(array)# get the length of array and store in the variable n
-array.sort()
-result = linearSearch(array,n,k)# use the function for linear search
-print(array)
-if(result==-1):
-    print("Element not found")
-else:
-    print("Element found at index: ",result)     
-# use if-else to print sorted array and "Element not found" if the item is not present in the list otherwise print sorted array and "Element found at index: ", result
+def selection_sort(nums):
+    # write your code here using selection sort
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if (nums[j]<nums[low]):
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+    print(nums)
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+# use the selection sort function
+# print the sorted list
 
 
 ```
 ii)	#Insertion Sort
 ```
 ''' 
-Program to find the element in a list using Binary Search(Iterative Method)..
+Program to sort the elements in the list using the Insertion Sort algorithm.
 Developed by: Vanitha S
 RegisterNumber: 212222100057
 '''
-def binarySearchIter(array, k, low, high):
-    mid=0
-    while low<=high:
-        mid=(high+low)//2
-        if(array[mid]<k):
-            low=mid+1
-        elif(array[mid]>k):
-            high=mid-1
-        else:
-            return mid
-    return -1
-
-array = eval(input())
-array.sort()# sort the array
-k = eval(input()) #k-item to be searched
-res=binarySearchIter(array, k, 0,len(array)-1)
-# use the binary search function to find the item in the list
-print(array)
-if(res==-1):
-    print("Element not found")
-else:
-    print("Element found at index: ",res)
-# use if-else to print sorted array and "Element not found" if the item is not present in the list otherwise print sorted array and "Element found at index: ", result
+def insertion_sort(nums):
+    # Write your code here to sort the elements in the list using Insertion sort algorithm
+    for i in range(1,len(nums)):
+        key=nums[i]
+        j=i-1
+        while j>=0 and key<nums[j]:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=key
+    return nums
+list_of_nums = eval(input())
+new_nums=insertion_sort(list_of_nums)
+print(new_nums)
+# use the insertion sort function to get the sorted list
+# print the sorted list
 
 ```
 
 ## Output:
+![Screenshot 2023-05-24 220329](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/4d8f86e2-b550-445d-8b42-db7e75a89a03)
 
-![3b1](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/21852600-9c5a-4c71-a2ea-8c778993ca23)
-
-
-
-![3b2](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/6bac1295-e29e-42e8-8f01-054d0e764544)
+![Screenshot 2023-05-24 220314](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/1699c4bb-91b9-4185-81a6-47b71fa41043)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
