@@ -67,9 +67,11 @@ print(new_nums)
 ```
 
 ## Output:
-![Screenshot 2023-05-24 220329](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/4d8f86e2-b550-445d-8b42-db7e75a89a03)
 
 ![Screenshot 2023-05-24 220314](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/1699c4bb-91b9-4185-81a6-47b71fa41043)
+
+![Screenshot 2023-05-24 220329](https://github.com/Vanitha-SM/Sorting-Algorithm/assets/119557985/4d8f86e2-b550-445d-8b42-db7e75a89a03)
+
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
